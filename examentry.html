@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function validateForm() {
+            var x = document.forms["myForm"]["Full name"].value;
+            var y = document.forms["myForm"]["Subject"].value;
+            var z = document.forms["myForm"]["Examination number"].value;
+            if (x == "") {
+                alert("Name, Subject and Examination number must be filled out");
+                return false;
+            }
+        }
+    </script>
+    <meta charset="UTF-8">
+    <title>webbysite</title>
+</head>
+<body>
+<h1 style="font-size:300%;">Exam Entry Form</h1>
+
+<form action="/action_page.php">
+    Full name:
+    <input type="text" name="Full name"><br><br>
+
+    Subject:
+    <input type="text" name="Subject"><br><br>
+
+    Examination number:
+    <input type="text" name="Examination number"><br><br>
+
+    <input type="radio" name="gender" value="GCSE" checked> GCSE <br>
+    <input type="radio" name="gender" value="A2-Level"> A2-Level <br>
+    <input type="radio" name="gender" value="AS-Level"> AS-Level <br><br>
+    <input type="submit" value="Submit">
+    <input type="reset">
+</form>
+
+
+</body>
+</html>
